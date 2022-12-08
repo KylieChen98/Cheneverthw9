@@ -1,0 +1,12 @@
+#!/bin/bash
+
+echo Building the GPIO Control Application.
+
+g++ control_GPIO.cpp -o control_GPIO
+
+chmod u+x control_GPIO
+
+echo GPIO Control Application Built Successfully.
+
+config-pin p8.16 gpio_pu
+config-pin p9.12 gpio
